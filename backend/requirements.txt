@@ -1,0 +1,17 @@
+# Core FastAPI stack
+fastapi>=0.115.0
+uvicorn>=0.30.0                     # ASGI server (recommended way to run FastAPI)
+
+# Automatic API documentation & validation (included via fastapi, but good to pin)
+pydantic>=2.8.0
+
+# Optional but very useful
+python-dotenv>=1.0.0                # for loading .env files (port, secrets, etc.)
+
+# Development & debugging helpers (strongly recommended)
+httpx>=0.27.0                       # great for testing your own API
+pytest>=8.3.0                       # unit/integration testing
+pytest-asyncio>=0.23.0              # if you later add async tests
+
+# If you want colored terminal output when running uvicorn
+rich>=13.7.0                        # optional - nicer logs
